@@ -2,6 +2,7 @@
 
 What changed in each version, newest first.
 
+- [4.2.5](v4.2.5.md) — denser checkout screens, notes at checkout, saved sessions and snacks on one page
 - [4.2.2](v4.2.2.md) — a faster Sell screen you can arrange
 - [4.2.1](v4.2.1.md) — no payment method when starting a session, corrections from the customer page, stock filters (shipped inside 4.2.2)
 - [4.2.0](v4.2.0.md) — saved snack orders and inventory search
