@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Replaced by `flutter build web --base-href` (see docs/WEB_APP.md). -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Run your Hyde Arena café from a browser. Your data stays on the café PC.">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow">
+  <!--
+    The page talks only to where it is hosted and to the Supabase relay
+    (end-to-end encrypted packets to and from the café PC). Font downloads
+    are allowed so names in other scripts (Gujarati, Hindi, emoji) still show.
+  -->
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' 'wasm-unsafe-eval';
+    style-src 'self' 'unsafe-inline';
+    img-src 'self' data: blob:;
+    font-src 'self' data: https://fonts.gstatic.com;
+    connect-src 'self' https://*.supabase.co wss://*.supabase.co https://fonts.gstatic.com blob: data:;
+    worker-src 'self' blob:;
+    object-src 'none';
+    base-uri 'self';
+    form-action 'none';
+  ">
+
+  <meta name="theme-color" content="#0B0C10">
+  <meta name="color-scheme" content="dark">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Hyde Arena">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="splash.css">
+
+  <title>Hyde Arena</title>
+</head>
+<body>
+  <div id="splash" role="status" aria-live="polite">
+    <img src="icons/Icon-192.png" alt="" width="72" height="72">
+    <p class="name">Hyde Arena</p>
+    <div class="bar"><span></span></div>
+    <p class="hint">Loading…</p>
+  </div>
+  <noscript>
+    <p class="noscript">Hyde Arena needs JavaScript. Turn it on for this site and reload.</p>
+  </noscript>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
